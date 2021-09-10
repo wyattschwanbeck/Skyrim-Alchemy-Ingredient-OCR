@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Sep  2 16:56:27 2021
-
+This is a command line script that awaits key presses for CTRL+ALT to begin looking for ingredients in your inventory.
+To set up in-game, navigate to your ingredient inventory all the way at the top of the list. Once CTRL+Alt press is detected,
+down arrow button presses will occur after the ingredient is parsed. 
 @author: wyatt
 """
 import mss
@@ -22,7 +24,7 @@ pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesserac
 def adjusted_capture(screen, base_pixel_x, base_pixel_y, y_size, x_size):
         '''Allows for dynamic shot capture on (almost) any resolution.
 		Shape is based on intially captured height (1080) and width (1920).
-		Proportional results provided with input based and screensize'''
+		Proportional results provided with input based on user screensize'''
 
         screen_w_adj = (screen.shape[0]/1080)
         screen_h_adj = (screen.shape[1]/1920)
@@ -89,6 +91,7 @@ while True:
 				#Parese image and cleanse up to \n char to just get ingredient name
 				inv = pytesseract.image_to_string(Image.open("inventory.png"))
 				inv = inv[0:inv.find("\n")]
+				#Check if at bottom of inventory and stop the capture if so.
 				if inv == LastIng:
 					Capture = False
 				else:
