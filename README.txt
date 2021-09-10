@@ -1,4 +1,4 @@
-![](DemoParse - Copy.gif)
+![alt text](https://github.com/wyattschwanbeck/Skyrim-Alchemy-Ingredient-OCR/blob/main/DemoParse_3%20-%20Copy.gif?raw=true)
 
 REQUIREMENT:
 Download and install Tesseract OCR for Windows: https://github.com/UB-Mannheim/tesseract/wiki
