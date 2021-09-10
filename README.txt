@@ -1,3 +1,5 @@
+![](DemoParse - Copy.gif)
+
 REQUIREMENT:
 Download and install Tesseract OCR for Windows: https://github.com/UB-Mannheim/tesseract/wiki
 Needs to install to this location: C:/Program Files/Tesseract-OCR/tesseract.exe
