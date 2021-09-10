@@ -1,4 +1,4 @@
-![Demo]("DemoParse_3 - Copy.gif")
+![Demo](DemoParse_3.gif)
 
 REQUIREMENT:
 Download and install Tesseract OCR for Windows: https://github.com/UB-Mannheim/tesseract/wiki
