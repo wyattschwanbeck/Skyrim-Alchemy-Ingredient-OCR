@@ -7,4 +7,4 @@ Packages should be installed as indicated in Requirements.txt
 
 RUNNING THE PROGRAM:
 Run main.py
-Navigate to the top of your ingredients list and press CTRL+ALT. Parsed results will be outputted into Parsed_Character_Ingredients.csv
+Navigate to the top of your ingredients list and press CTRL+ALT. Parsed results will output into Parsed_Character_Ingredients.csv
